@@ -16,7 +16,7 @@ const sendMessage =  (channel, timestamp) => {
         data: JSON.stringify(data),
       }
 
-    return axios(configuration).then(res => console.log(res));
+    return axios(configuration);
 };
 
 export default sendMessage;

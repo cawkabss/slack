@@ -1,0 +1,83 @@
+.root
+    height: 100%
+    box-shadow: 0px 1px 3px 0px rgba(0,0,0,0.2),
+                0px 1px 1px 0px rgba(0,0,0,0.14),
+                0px 2px 1px -1px rgba(0,0,0,0.12)
+    border-radius: 4px
+    background-color: #fff
+    overflow: hidden
+
+.card
+    height: 100%
+
+.link
+    position: relative
+    display: flex
+    flex-direction: column
+    justify-content: center
+    height: 100%
+    padding: 15px
+    text-decoration: none
+    color: inherit
+    box-sizing: border-box
+
+    &:hover
+        text-decoration: none
+
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            background-color: rgba(0, 0, 0, .1)
+
+.header
+    display: flex
+
+.likes
+    font-size: 15px
+    line-height: 1
+
+.likeIcon
+    display: block
+    width: 15px
+    height: 15px
+    fill: rgb(198,40,40)
+
+.folderIcon
+    display: block
+    width: 20px
+    height: 20px
+    object-fit: cover
+    border-radius: 50%
+
+.content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    flex: 1
+    width: 100%
+    box-sizing: border-box
+
+.title
+    width: 100%
+    margin: 0 0 10px
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+
+.linkUrl
+    margin: 0
+    width: 100%
+    overflow: hidden
+    white-space: nowrap
+    text-overflow: ellipsis
+    font-weight: 500
+    color: #2196f3
+
+.slackIcon
+    width: 25px
+    height: 25px
+
